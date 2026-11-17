@@ -1,0 +1,42 @@
+---
+title: "Faturas e dados fiscais"
+description: "Adicione o nome da empresa, o endereço de cobrança e o ID fiscal para que as faturas sirvam para a declaração de impostos."
+---
+
+Os pagamentos são processados pelo Stripe, e cada pagamento aprovado gera uma fatura. A fatura mostra os dados de cobrança salvos no cliente.
+
+## O que aparece na fatura
+
+- **Nome**: o nome completo ou a razão social informada
+- **Endereço de cobrança**: o endereço informado no checkout ou no portal de cobrança
+- **ID fiscal**: o ID fiscal da empresa, se adicionado
+
+Você pode ver e baixar todas as faturas na página **Billing** do Console.
+
+## Informar os dados no checkout
+
+1. Na página de checkout do Stripe, abra **Dados de cobrança** e informe a razão social e o endereço de cobrança completo. Use o país onde a empresa está registrada.
+2. Se esse país aceitar IDs fiscais de empresa, marque **Estou comprando como empresa** e informe a razão social e o ID fiscal.
+3. Conclua o pagamento. Os dados são salvos e aparecem nesta e nas próximas faturas.
+
+Os mesmos campos são solicitados em pagamentos únicos, como Alipay, WeChat Pay e licenças vitalícias: o endereço sempre, e o ID fiscal apenas em países compatíveis.
+
+A coleta de ID fiscal no checkout está disponível em muitos países, incluindo Turquia, Estados-membros da UE, Reino Unido, Emirados Árabes Unidos, Austrália e Canadá. O formulário aparece automaticamente conforme o país de cobrança selecionado.
+
+<Note>
+O campo de ID fiscal é apenas para **IDs fiscais de empresa**. Na Turquia, informe o TR TIN; em países da UE, o número de VAT.
+</Note>
+
+## Adicionar ou alterar os dados depois
+
+Se o formulário de ID fiscal não estiver disponível para o seu país de cobrança no checkout (por exemplo, China), você pode adicioná-lo depois de pagar:
+
+1. Abra a página **Billing** do Console.
+2. Clique em **Gerenciar assinatura** e escolha a opção de dados de cobrança para abrir o portal do Stripe.
+3. Em **Dados de cobrança**, altere o nome, o endereço ou o ID fiscal. Para adicionar um ID fiscal, escolha o tipo, informe o número e salve. Use **Adicionar outro ID** se precisar de mais de um.
+
+<Warning>
+As alterações valem apenas para faturas emitidas depois de salvar. Faturas já emitidas são definitivas e não podem ser editadas. Confira os dados antes do primeiro pagamento.
+</Warning>
+
+Se precisar corrigir uma fatura já emitida, entre em contato com o suporte.

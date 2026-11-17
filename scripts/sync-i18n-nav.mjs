@@ -9,6 +9,7 @@ const EN_PAGES = {
     "intro/overview",
     "intro/pricing",
     "intro/enable-service",
+    "intro/invoices",
     "intro/license",
     "intro/resource-packs",
     "intro/use-with-ai",
